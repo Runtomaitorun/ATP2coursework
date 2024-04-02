@@ -7,12 +7,10 @@ public class FinishPoint : MonoBehaviour
     [SerializeField] string sceneName;
 
 
-    public void OnMouseDown()
-    {
-        LoadNextScene(sceneName);
-    }
+
     public void LoadNextScene(string sceneName)
     {
+        Debug.Log(gameObject.name + "clicked");
         SceneController.instance.NextScene(sceneName);
     }
 

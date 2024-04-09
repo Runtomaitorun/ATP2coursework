@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
             level = levelData.Length;
         }
         // pass SO info into the locks
-        LocksData[] data = LocksData[level - 1];
+        locks.data = levelData[level - 1];
         
     }
 

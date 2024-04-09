@@ -5,4 +5,6 @@ using UnityEngine;
 public class LocksData : ScriptableObject
 {
     public string password;
+    public int level;
+    public string name;
 }

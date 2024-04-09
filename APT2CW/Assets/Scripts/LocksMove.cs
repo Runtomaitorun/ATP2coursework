@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class LocksMove : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public LocksData data;
+
+    public Color color;
+    public int level;
+    public string name;
+    public string password;
     void Start()
     {
-        
+        gameObject.name = data.name;
+        GetComponent<SpriteRenderer>().color = data.color;
+        level = data.level;
+        password = data.password;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        // check if something happens change the level data
     }
 }

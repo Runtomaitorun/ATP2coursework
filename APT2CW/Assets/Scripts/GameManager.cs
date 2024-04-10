@@ -4,22 +4,5 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public LocksMove locks;
-    public LocksData[] levelData;
-
-    public int level;
-
-
-    void Start()
-    {
-        // If go above max just turn back to max
-        if (level > levelData.Length)
-        {
-            level = levelData.Length;
-        }
-        // pass SO info into the locks
-        locks.data = levelData[level - 1];
-        
-    }
-
+    public static List<int> collectedItems = new List<int>();
 }
